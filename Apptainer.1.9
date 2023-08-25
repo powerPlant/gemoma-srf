@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: quay.io/biocontainers/gemoma:1.9--hdfd78af_0
+
+%labels
+Maintainer ben.warren@plantandfood.co.nz
+Version 1.9
+
+%post
+GeMoMa GeMoMaPipeline info
+
+%runscript
+exec GeMoMa "$@"
